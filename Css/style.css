@@ -1,0 +1,77 @@
+* {
+  margin: 0rem;
+  padding: 0rem;
+}
+
+/* ===================================================================== */
+/* ===============================Background============================ */
+
+.first-background {
+  background-color: #FBAB7E;
+  background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+}
+
+/* ===================================================================== */
+/* ===============================Grid================================== */
+
+/* ===================================================================== */
+/* =============================content================================= */
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+/* ===================================================================== */
+/* =============================row-1=================================== */
+.row-1 {
+  display: grid;
+  grid-row: 1/2;
+  grid-column: 1/-1;
+  position: relative;
+}
+
+.nurse-img {
+  width: 100%;
+  filter: blur(8rem);
+}
+
+.nurse-img-open {
+  animation: blur-image-start 2s forwards;
+}
+
+@keyframes blur-image-start {
+  from {
+    filter: blur(8rem);
+  }
+
+  to {
+    filter: blur(0rem);
+  }
+}
+
+h1.count-number {
+  position: absolute;
+  left: 45vw;
+  width: 10vw;
+  margin-top: 25%;
+  font-family: "Poppins-Medium";
+  font-size: 4rem;
+  text-align: center;
+}
+
+.count-number-deactive {
+  animation: count-number-end 1.8s forwards;
+}
+
+@keyframes count-number-end {
+  from {
+    opacity: 0.8;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
